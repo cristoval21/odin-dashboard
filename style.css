@@ -154,14 +154,13 @@ body {
 .page-container {
 	display: grid;
 	grid-template-columns: 1fr 5fr;
-	grid-template-rows: min-content min-content;
+	grid-template-rows: min-content 1fr;
 }
 
 .sidebar {
 	grid-row: 1 / -1;
 	background-color: var(--tertiary);
 	color: var(--on-tertiary);
-	height: 100%;
 	padding: 1rem 5rem 1rem 1rem;
 	font-weight: bold;
 	display: grid;
@@ -201,6 +200,7 @@ header {
 	grid-template-rows: min-content min-content;
 	padding: 1rem 2rem;
 	gap: 1.25rem;
+	box-shadow: 10px 0 10px #9ca3af;
 }
 
 header .search,
@@ -266,4 +266,21 @@ header .quick-actions button {
 	border-radius: 500px;
 	color: var(--on-tertiary);
 	font-weight: bold;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	grid-template-rows: min-content min-content;
+	padding: 1.5rem 1rem;
+	gap: 1.5rem;
+}
+
+main h2 {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+main .projects {
+	grid-row: 1 / -1;
 }
