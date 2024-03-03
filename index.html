@@ -13,61 +13,65 @@
 <body>
   <div class="page-container">
     <nav class="sidebar">
-      <div class="branding">
-        <span class="material-symbols-outlined branding-logo">dashboard</span>
-        <h1 class="branding-text">Dashboard</h1>
+      <div class="sidebar__branding">
+        <span class="sidebar__nav-icon icon icon--filled icon--large material-symbols-outlined">dashboard</span>
+        <h1 class="sidebar__nav-text sidebar__nav-text--large">Dashboard</h1>
       </div>
 
-      <div class="nav-main">
-        <span class="material-symbols-outlined">home</span>
-        <div class="nav-item">Home</div>
-        <span class="material-symbols-outlined">person</span>
-        <div class="nav-item">Profile</div>
-        <span class="material-symbols-outlined">chat</span>
-        <div class="nav-item">Messages</div>
-        <span class="material-symbols-outlined">schedule</span>
-        <div class="nav-item">History</div>
-        <span class="material-symbols-outlined">task</span>
-        <div class="nav-item">Tasks</div>
-        <span class="material-symbols-outlined">groups</span>
-        <div class="nav-item">Communities</div>
+      <div class="sidebar__nav-main">
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">home</span>
+        <div class="sidebar__nav-text">Home</div>
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">person</span>
+        <div class="sidebar__nav-text">Profile</div>
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">chat</span>
+        <div class="sidebar__nav-text">Messages</div>
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">schedule</span>
+        <div class="sidebar__nav-text">History</div>
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">task</span>
+        <div class="sidebar__nav-text">Tasks</div>
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">groups</span>
+        <div class="sidebar__nav-text">Communities</div>
       </div>
 
-      <div class="nav-misc">
-        <span class="material-symbols-outlined">settings</span>
-        <div class="nav-item">Settings</div>
-        <span class="material-symbols-outlined">help_center</span>
-        <div class="nav-item">Support</div>
-        <span class="material-symbols-outlined">verified_user</span>
-        <div class="nav-item">Privacy</div>
+      <div class="sidebar__nav-misc">
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">settings</span>
+        <div class="sidebar__nav-text">Settings</div>
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">help_center</span>
+        <div class="sidebar__nav-text">Support</div>
+        <span class="sidebar__nav-icon icon icon--filled material-symbols-outlined">verified_user</span>
+        <div class="sidebar__nav-text">Privacy</div>
       </div>
     </nav>
 
 
-    <header>
-      <div class="search">
-        <label class="search-logo" for="search">
+    <header class="header">
+      <div class="header__search">
+        <label class="search__icon icon" for="search">
           <span class="material-symbols-outlined">search</span>
         </label>
-        <input class="search-box" type="search" name="search" id="search">
+        <input class="search__input input input--secondary" type="search" name="search" id="search">
       </div>
 
-      <div class="profile">
-        <span class="material-symbols-outlined">notifications_active</span>
-        <img class="user-picture" src="https://images.unsplash.com/photo-1709038459444-6f0f65994fe8?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile picture">
-        <span class="user-name">Morgan Oakley</span>
+      <div class="header__settings">
+        <span class="settings__icon icon material-symbols-outlined">notifications_active</span>
+        <img class="settings__profile-picture profile-picture" src="https://images.unsplash.com/photo-1709038459444-6f0f65994fe8?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile picture">
+        <span class="settings__name">Morgan Oakley</span>
       </div>
 
-      <div class="greetings-container">
-        <img class="user-picture" src="https://images.unsplash.com/photo-1709038459444-6f0f65994fe8?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile picture">
-        <div class="user-greetings">Hi there,</div>
-        <div class="user-name">Morgan Oakley (@morgan)</div>
+      <div class="header__greetings">
+        <div class="greetings__star">
+          <img class="greetings__profile-picture profile-picture profile-picture--large" src="https://images.unsplash.com/photo-1709038459444-6f0f65994fe8?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile picture">
+        </div>
+        <div class="greetings__end">
+          <div class="greetings__text">Hi there,</div>
+          <div class="greetings__text greetings__text--large">Morgan Oakley (@morgan)</div>
+        </div>
       </div>
 
-      <div class="quick-actions">
-        <button type="button">New</button>
-        <button type="button">Upload</button>
-        <button type="button">Share</button>
+      <div class="header__actions">
+        <button class="actions__btn btn" type="button">Upload</button>
+        <button class="actions__btn btn" type="button">New</button>
+        <button class="actions__btn btn" type="button">Share</button>
       </div>
     </header>
 
@@ -75,17 +79,52 @@
       <div class="projects">
         <h2>Your Projects</h2>
         <div class="cards-container">
-          <div class="card">
+          <div class="project-card">
             <h3>Super Cool Project</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad, explicabo minus nesciunt quos laudantium.</p>
-            <div class="material-symbols-outlined">heart_plus</div>
-            <div class="material-symbols-outlined">track_changes</div>
+            <div class="buttons">
+              <div class="material-symbols-outlined">heart_plus</div>
+              <div class="material-symbols-outlined">track_changes</div>
+              <div class="material-symbols-outlined">call_split</div>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad, explicabo minus nesciunt quos laudantium.</p>
+            <div class="buttons">
+              <div class="material-symbols-outlined">heart_plus</div>
+              <div class="material-symbols-outlined">track_changes</div>
+              <div class="material-symbols-outlined">call_split</div>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad, explicabo minus nesciunt quos laudantium.</p>
+            <div class="buttons">
+              <div class="material-symbols-outlined">heart_plus</div>
+              <div class="material-symbols-outlined">track_changes</div>
+              <div class="material-symbols-outlined">call_split</div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="announcements">
         <h2>Announcements</h2>
+        <ul class="announcements__container">
+          <li class="announcement">
+            <h4>Site Maintenance</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iure at saepe qui cupiditate hic in pariatur. Mollitia dolores nihil laudantium, laborum minus, quia similique vitae delectus corrupti tempore velit.</p>
+          </li>
+          <li class="announcement">
+            <h4>Site Maintenance</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iure at saepe qui cupiditate hic in pariatur. Mollitia dolores nihil laudantium, laborum minus, quia similique vitae delectus corrupti tempore velit.</p>
+          </li>
+          <li class="announcement">
+            <h4>Site Maintenance</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iure at saepe qui cupiditate hic in pariatur. Mollitia dolores nihil laudantium, laborum minus, quia similique vitae delectus corrupti tempore velit.</p>
+          </li>
+        </ul>
       </div>
       
       <div class="trending">
