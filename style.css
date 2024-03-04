@@ -208,10 +208,7 @@ body {
 	gap: 1.5rem 1rem;
 }
 
-.header__search,
-.header__settings,
-.header__greetings,
-.header__actions {
+.header__section {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
@@ -254,26 +251,32 @@ body {
 	font-size: 1.25em;
 }
 
-.btn {
-	border-radius: 500px;
+.button {
 	border: none;
-	padding: 0.75em 2em;
 	font-weight: bold;
+	cursor: pointer;
+}
+
+.button--primary {
 	background-color: var(--tertiary);
 	color: var(--on-tertiary);
-	cursor: pointer;
-
+	
 	&:hover,
 	&:focus {
 		background-color: var(--tertiary-hover);
 	}
-
+	
 	&:focus {
 		outline: 1px solid black;
 	}
 }
 
-main {
+.button--style-text {
+	border-radius: 500px;
+	padding: 0.75em 2em;
+}
+
+.main {
 	display: grid;
 	grid-template-columns: 4fr 1fr;
 	grid-template-rows: min-content min-content;
@@ -281,47 +284,44 @@ main {
 	gap: 1.5rem;
 }
 
-main h2 {
+.section__heading {
 	font-weight: bold;
 	font-size: 1.25rem;
 }
 
-main .projects,
-main .announcements,
-main .trending {
+.main__section {
 	display: grid;
 	grid-template-rows: min-content 1fr;
 	gap: 0.75em;
 }
 
-main .projects {
+.main__projects {
 	grid-row: 1 / -1;
 }
 
-main .projects .cards-container {
+.projects__cards-container {
 	display: grid;
 	gap: 1.5rem;
 	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 	grid-auto-rows: min-content;
 }
 
-main .projects .project-card,
-main .announcements__container {
+.card {
 	background-color: var(--secondary);
 	padding: 2em 1.5em;
 	border-radius: 0.5rem;
 	display: grid;
-	box-shadow: 1px 1px 5px #9ca3af ;
+	box-shadow: 3px 3px 2px #d1d5db ;
 }
 
-main .projects .project-card {
+.projects__card {
 	grid-template-rows: min-content 1fr min-content;
 	height: 150px;
 	gap: 0.5em;
 	border-inline-start: 8px solid orange;
 }
 
-main .projects .project-card h3 {
+.card__heading {
 	font-weight: bold;
 	font-size: 1.15rem;
 }

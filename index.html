@@ -45,20 +45,20 @@
 
 
     <header class="header">
-      <div class="header__search">
+      <div class="header__search header__section">
         <label class="search__icon icon" for="search">
           <span class="material-symbols-outlined">search</span>
         </label>
         <input class="search__input input input--secondary" type="search" name="search" id="search">
       </div>
 
-      <div class="header__settings">
+      <div class="header__settings header__section">
         <span class="settings__icon icon material-symbols-outlined">notifications_active</span>
         <img class="settings__profile-picture profile-picture" src="https://images.unsplash.com/photo-1709038459444-6f0f65994fe8?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile picture">
         <span class="settings__name">Morgan Oakley</span>
       </div>
 
-      <div class="header__greetings">
+      <div class="header__greetings header__section">
         <div class="greetings__star">
           <img class="greetings__profile-picture profile-picture profile-picture--large" src="https://images.unsplash.com/photo-1709038459444-6f0f65994fe8?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile picture">
         </div>
@@ -68,50 +68,32 @@
         </div>
       </div>
 
-      <div class="header__actions">
-        <button class="actions__btn btn" type="button">Upload</button>
-        <button class="actions__btn btn" type="button">New</button>
-        <button class="actions__btn btn" type="button">Share</button>
+      <div class="header__actions header__section">
+        <button class="actions__button button button--primary button--style-text" type="button">Upload</button>
+        <button class="actions__button button button--primary button--style-text" type="button">New</button>
+        <button class="actions__button button button--primary button--style-text" type="button">Share</button>
       </div>
     </header>
 
-    <main>
-      <div class="projects">
-        <h2>Your Projects</h2>
-        <div class="cards-container">
-          <div class="project-card">
-            <h3>Super Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad, explicabo minus nesciunt quos laudantium.</p>
-            <div class="buttons">
-              <div class="material-symbols-outlined">heart_plus</div>
-              <div class="material-symbols-outlined">track_changes</div>
-              <div class="material-symbols-outlined">call_split</div>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Super Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad, explicabo minus nesciunt quos laudantium.</p>
-            <div class="buttons">
-              <div class="material-symbols-outlined">heart_plus</div>
-              <div class="material-symbols-outlined">track_changes</div>
-              <div class="material-symbols-outlined">call_split</div>
-            </div>
-          </div>
-          <div class="project-card">
-            <h3>Super Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad, explicabo minus nesciunt quos laudantium.</p>
-            <div class="buttons">
-              <div class="material-symbols-outlined">heart_plus</div>
-              <div class="material-symbols-outlined">track_changes</div>
-              <div class="material-symbols-outlined">call_split</div>
+    <main class="main">
+      <section class="projects main__projects main__section">
+        <h2 class="projects__heading section__heading">Your Projects</h2>
+        <div class="projects__cards-container">
+          <div class="projects__card card">
+            <h3 class="projects__card__heading card__heading">Super Cool Project</h3>
+            <p class="projects__card__desc card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad, explicabo minus nesciunt quos laudantium.</p>
+            <div class="buttons projects__card__button-container card__button-container">
+              <div class="projects__card__button card__button button button--secondary button--style-icon material-symbols-outlined">heart_plus</div>
+              <div class="projects__card__button card__button button button--secondary button--style-icon material-symbols-outlined">track_changes</div>
+              <div class="projects__card__button card__button button button--secondary button--style-icon material-symbols-outlined">call_split</div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="announcements">
-        <h2>Announcements</h2>
-        <ul class="announcements__container">
+      <section class="main__announcements  main__section">
+        <h2 class="announcements__heading section__heading">Announcements</h2>
+        <ul class="announcements__container card">
           <li class="announcement">
             <h4>Site Maintenance</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iure at saepe qui cupiditate hic in pariatur. Mollitia dolores nihil laudantium, laborum minus, quia similique vitae delectus corrupti tempore velit.</p>
@@ -125,11 +107,11 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iure at saepe qui cupiditate hic in pariatur. Mollitia dolores nihil laudantium, laborum minus, quia similique vitae delectus corrupti tempore velit.</p>
           </li>
         </ul>
-      </div>
+      </section>
       
-      <div class="trending">
-        <h2>Trending</h2>
-      </div>
+      <section class="main__trending main__section">
+        <h2 class="trending__heading section__heading">Trending</h2>
+      </section>
     </main>
   </div>
 </body>
