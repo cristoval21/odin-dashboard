@@ -310,15 +310,14 @@ body {
 	background-color: var(--secondary);
 	padding: 2em 1.5em;
 	border-radius: 0.5rem;
+	box-shadow: 3px 3px 2px #d1d5db;
 	display: grid;
-	box-shadow: 3px 3px 2px #d1d5db ;
 }
 
 .projects__card {
 	grid-template-rows: min-content 1fr min-content;
-	height: 150px;
 	gap: 0.5em;
-	border-inline-start: 8px solid orange;
+	border-inline-start: 8px solid #fb923c;
 }
 
 .card__heading {
@@ -326,15 +325,22 @@ body {
 	font-size: 1.15rem;
 }
 
-main .projects .project-card p {
+.card__desc {
 	color: #9ca3af;
 }
 
-main .projects .project-card .buttons {
+.projects__card__desc {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-block-start: 5px;
+	margin-block-end: 30px;
+}
+
+.projects__card__button-container {
 	display: grid;
 	justify-content: end;
 	grid-auto-flow: column;
-	gap: 1em;
+	gap: 1.5em;
 }
 
 main .announcements .announcements__container {
